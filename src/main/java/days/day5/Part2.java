@@ -1,4 +1,4 @@
-package days.day2;
+package days.day5;
 
 public class Part2 {
 }

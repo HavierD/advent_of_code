@@ -29,4 +29,16 @@ public class Round {
             this.greenCubeCount = Integer.parseInt(numberStr);
         }
     }
+
+    public int getBlueCubeCount() {
+        return blueCubeCount;
+    }
+
+    public int getRedCubeCount() {
+        return redCubeCount;
+    }
+
+    public int getGreenCubeCount() {
+        return greenCubeCount;
+    }
 }
