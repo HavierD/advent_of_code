@@ -12,10 +12,16 @@ public class MethodFrame {
     }
 
     public boolean includes(Long from) {
-        return source + range >= from && from >= source;
+        var max = source + range;
+        var min = source;
+        return from >= min && from < max;
     }
 
     public Long walkToDestination(Long from) {
+        var a = from - source + destination;
+        if (a < 0) {
+            throw new RuntimeException("a < 0");
+        }
         return from - source + destination;
     }
 }
