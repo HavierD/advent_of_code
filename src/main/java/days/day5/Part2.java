@@ -28,21 +28,6 @@ public class Part2 {
 
 
 
-//        var seeds = new ArrayList<>(List.of(Input.seeds.split(" ")));
-//        var seedPairs = new ArrayList<SeedPair>();
-//        for (var i = 1; i <= seeds.size(); i+=2) {
-//            var seedNumber = Long.parseLong(seeds.get(i - 1));
-//            var seedRange = Long.parseLong(seeds.get(i));
-//            seedPairs.add(new SeedPair(seedNumber, seedRange));
-//        }
-//        var seedToSoil = new Mapping(NodeEnum.SEED, NodeEnum.SOIL, Input.seedToSoil);
-//        var soilToFertilizer = new Mapping(NodeEnum.SOIL, NodeEnum.FERTILIZER, Input.soilToFertilizer);
-//        var fertilizerToWater = new Mapping(NodeEnum.FERTILIZER, NodeEnum.WATER, Input.fertilizerToWater);
-//        var waterToLight = new Mapping(NodeEnum.WATER, NodeEnum.LIGHT, Input.waterToLight);
-//        var lightToTemperature = new Mapping(NodeEnum.LIGHT, NodeEnum.TEMPERATURE, Input.lightToTemperature);
-//        var temperatureToHumidity = new Mapping(NodeEnum.TEMPERATURE, NodeEnum.HUMIDITY, Input.temperatureToHumidity);
-//        var humidityToLocation = new Mapping(NodeEnum.HUMIDITY, NodeEnum.LOCATION, Input.humidityToLocation);
-
         for (var seedPair : seedPairs) {
             System.out.println("seedPair: " + seedPair.getSeedNumber());
             for (var number = seedPair.getSeedNumber(); number < seedPair.getSeedNumber() + seedPair.getRange(); number++) {
